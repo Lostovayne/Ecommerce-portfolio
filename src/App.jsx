@@ -56,14 +56,11 @@ export default function App() {
           </button>
         </div>
 
-        {/* productos */}
-
         <div className="container w-full h-full  xl:pl-36 mx-auto md:pr-16">
-          {/* xdd */}
+
           <TextosBusqueda />
           <div className=" xl:ml-16 flex w-full items-center justify-between flex-wrap lg:px-10 mx-auto mt-2 lg:mt-8 gap-10 ">
             {/* cards */}
-
             {Productos.map((producto) => (
               <motion.div
               initial={{opacity:0}}
@@ -73,9 +70,6 @@ export default function App() {
               variants={{
                 hidden:{opacity:0, scale:0.8},
                 show:{opacity:1, scale:1},}}
-
-              
-              
               className=" mb-5 w-[90%] mx-auto lg:w-72 " key={producto.id}>
                 <div className="bg-[#191922]  lg:w-72 h-72 rounded-lg mb-3 overflow-hidden cursor-pointer flex items-center justify-center">
                   <img
