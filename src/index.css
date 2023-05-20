@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#borrarScroll {
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer y Microsoft Edge */
+}
+
+#borrarScroll::-webkit-scrollbar {
+  width: 0px; /* Safari y Chrome */
+  height: 0px;
+}
