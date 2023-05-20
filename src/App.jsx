@@ -56,7 +56,7 @@ export default function App() {
         {/* productos */}
 
         <div className="container w-full h-full  xl:pl-36 mx-auto md:pr-16">
-          <h2 className="text-xl font-medium text-white text-center">
+          <h2 className="text-xl font-medium text-white text-center mb-5">
             Available Products{" "}
           </h2>
           <div className=" xl:ml-16 flex w-full items-center justify-between flex-wrap lg:px-10 mx-auto lg:mt-16 gap-10 ">
