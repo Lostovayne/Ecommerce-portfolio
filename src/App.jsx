@@ -11,6 +11,7 @@ import {
 import Sidebar from "./components/Sidebar";
 
 import { Productos } from "./data/Productos";
+import TextosBusqueda from "./components/TextosBusqueda";
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,10 +34,10 @@ export default function App() {
             </div>
 
             {/* user */}
-            <div className=" items-center text-gray-300 text-xl gap-3 hidden md:flex ">
-              <RiMoonClearFill />
-              <RiNotification3Fill />
-              <RiShoppingCart2Fill />
+            <div className=" items-center text-gray-300 text-xl gap-4 hidden md:flex ">
+              <RiMoonClearFill className="cursor-pointer hover:text-white " />
+              <RiNotification3Fill className="cursor-pointer hover:text-white " />
+              <RiShoppingCart2Fill className="cursor-pointer hover:text-white" />
               <img
                 src="https://img.freepik.com/free-photo/portrait-attractive-young-man-dressed-casually-using-tablet-computer-smiling-white-background_662251-2948.jpg?w=900&t=st=1684553725~exp=1684554325~hmac=4a58495d1aeef9f9dd69dbc17b1a68662f53f4d4f9edf9af7fe033e862bf5051"
                 alt="imagen usuario"
@@ -56,10 +57,9 @@ export default function App() {
         {/* productos */}
 
         <div className="container w-full h-full  xl:pl-36 mx-auto md:pr-16">
-          <h2 className="text-xl font-medium text-white text-center mb-5">
-            Available Products{" "}
-          </h2>
-          <div className=" xl:ml-16 flex w-full items-center justify-between flex-wrap lg:px-10 mx-auto lg:mt-16 gap-10 ">
+          {/* xdd */}
+          <TextosBusqueda />
+          <div className=" xl:ml-16 flex w-full items-center justify-between flex-wrap lg:px-10 mx-auto mt-2 lg:mt-8 gap-10 ">
             {/* cards */}
 
             {Productos.map((producto) => (
