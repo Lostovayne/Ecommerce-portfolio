@@ -12,6 +12,7 @@ import Sidebar from "./components/Sidebar";
 
 import { Productos } from "./data/Productos";
 import TextosBusqueda from "./components/TextosBusqueda";
+import ButtonCart from "./components/ButtonCart";
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -96,7 +97,7 @@ export default function App() {
                       </span>
                     </div>
 
-                    <RiShoppingCartFill className="text-xl text-gray-300 cursor-pointer hover:text-white transition-colors duration-500 w-10 h-10 p-2.5 rounded-full bg-[#191922]" />
+                    <ButtonCart/>
                   </div>
                 </div>
               </div>

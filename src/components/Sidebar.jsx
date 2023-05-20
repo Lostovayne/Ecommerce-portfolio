@@ -12,7 +12,7 @@ import IconoSidebar from "./IconoSidebar";
 const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
     <section
-      className={`bg-[#191922] col-span-1 w-full lg:w-72 h-screen space-y-10 fixed top-0  transition-all duration-500 ${
+      className={`bg-[#191922] z-50 col-span-1 w-full lg:w-72 h-screen space-y-10 fixed top-0  transition-all duration-500 ${
         !isOpen ? "-translate-x-full lg:translate-x-0" : "translate-x-0"
       } `}
     >

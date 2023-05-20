@@ -6,10 +6,10 @@ const TextosBusqueda = () => {
       <span className="text-base text-gray-400 font-medium pl-4 lg:pl-0 ">
         Discover / Electronics
       </span>
-      <h2 className="text-2xl font-medium text-white pl-4  lg:pl-0 ">
+      <h2 className="text-2xl font-medium text-white pl-4 my-2  lg:pl-0 ">
         Available Products
       </h2>
-      <section id="borrarScroll" className=" pl-4 py-2  flex gap-4 overflow-x-auto justify-between overscroll-x-contain w-full lg:pl-0 lg:mb-2 ">
+      <section id="borrarScroll" className=" pl-4 py-2  flex gap-4 overflow-x-auto justify-between overscroll-x-contain w-full lg:w-10/12 lg:pl-0 lg:mb-2 ">
         <ButtonFilters>All</ButtonFilters>
         <ButtonFilters>Bags</ButtonFilters>
         <ButtonFilters>Food</ButtonFilters>
