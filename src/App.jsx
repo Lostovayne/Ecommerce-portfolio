@@ -22,14 +22,14 @@ export default function App() {
           <img src="./icono.svg" alt="" className="w-14 h-14" />
           {/* Menu */}
           <div className="lg:pr-16 flex items-center space-x-7 ">
-            <div className="flex items-center bg-gray-700 py-1.5 mt-1 lg:mt-0 justify-between px-3 rounded-lg w-60 ">
+            <div className="flex items-center bg-gray-700 py-1.5 mt-1 lg:mt-0 justify-between px-2 rounded-lg w-60 ">
               <RiMicFill className="text-xl text-gray-300" />
               <input
                 type="text"
                 placeholder="Search"
                 className="border-none text-base text-gray-300 w-44 pl-1.5 rounded-lg bg-transparent focus:outline-none placeholder:text-gray-200 font-medium"
               />
-              <RiSearch2Line className="text-xl text-gray-300 cursor-pointer" />
+              <RiSearch2Line className="text-xl text-gray-300 mr-1 cursor-pointer" />
             </div>
 
             {/* user */}
