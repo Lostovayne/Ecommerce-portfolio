@@ -8,6 +8,7 @@ import {
   RiMicFill,
   RiShoppingCartFill,
 } from "react-icons/ri";
+import {motion} from "framer-motion"
 import Sidebar from "./components/Sidebar";
 
 import { Productos } from "./data/Productos";
@@ -64,7 +65,18 @@ export default function App() {
             {/* cards */}
 
             {Productos.map((producto) => (
-              <div className=" mb-5 w-[90%] mx-auto lg:w-72 " key={producto.id}>
+              <motion.div
+              initial={{opacity:0}}
+              whileInView={{opacity:1}}
+              transition={{ delay:0.2, duration:0.5}}
+              viewport={{once:true, amount:0.5}}
+              variants={{
+                hidden:{opacity:0, scale:0.8},
+                show:{opacity:1, scale:1},}}
+
+              
+              
+              className=" mb-5 w-[90%] mx-auto lg:w-72 " key={producto.id}>
                 <div className="bg-[#191922]  lg:w-72 h-72 rounded-lg mb-3 overflow-hidden cursor-pointer flex items-center justify-center">
                   <img
                     src={producto.img}
@@ -100,7 +112,7 @@ export default function App() {
                     <ButtonCart/>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
