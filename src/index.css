@@ -77,7 +77,7 @@
   transition: transform .65s ease .05s, -webkit-transform .65s ease .05s;
 }
 .button span:after {
-  --w: 12px;
+  --w: 14px;
   --h: 2px;
   --l: 2px;
   --t: 12px;
