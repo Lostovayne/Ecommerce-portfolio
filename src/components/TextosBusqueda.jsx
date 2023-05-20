@@ -17,7 +17,7 @@ const TextosBusqueda = () => {
         <ButtonFilters>Clothes</ButtonFilters>
         <ButtonFilters>Grocery</ButtonFilters>
         <ButtonFilters>Furniture</ButtonFilters>
-        <ButtonFilters>Baby care</ButtonFilters>
+        <ButtonFilters>Baby</ButtonFilters>
         <ButtonFilters>Stationery</ButtonFilters>
       </section>
     </div>
