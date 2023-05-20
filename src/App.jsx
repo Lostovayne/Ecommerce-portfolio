@@ -63,7 +63,7 @@ export default function App() {
             {/* cards */}
 
             {Productos.map((producto) => (
-              <div className=" mb-5 w-full lg:w-72 " key={producto.id}>
+              <div className=" mb-5 w-[90%] mx-auto lg:w-72 " key={producto.id}>
                 <div className="bg-[#191922]  lg:w-72 h-72 rounded-lg mb-3 overflow-hidden cursor-pointer flex items-center justify-center">
                   <img
                     src={producto.img}
